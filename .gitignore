@@ -1,3 +1,11 @@
+# Project specific
+config.py
+licence.txt
+*_user.txt
+*.log
+*.gdb
+
+
 *.py[cod]
 
 # C extensions
@@ -33,3 +41,6 @@ nosetests.xml
 .mr.developer.cfg
 .project
 .pydevproject
+
+# Mac
+.DS_Store
