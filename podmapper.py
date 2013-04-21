@@ -280,7 +280,7 @@ def main():
     found_rdio_tracks = dump_catalog(catalog_name)
 
     playlist_name = catalog_name
-    playlist_description = 'Created via Podmapper.\nconfig.SRC_MP3=%s\nWAVE_SAMPLE_SIZE=%s\nFILTER_COUNT=%s' % (config.SRC_MP3, config.WAVE_SAMPLE_SIZE, config.FILTER_COUNT)
+    playlist_description = 'Created via Podmapper.\SRC_MP3=%s\nWAVE_SAMPLE_SIZE=%s\nFILTER_COUNT=%s' % (config.SRC_MP3, config.WAVE_SAMPLE_SIZE, config.FILTER_COUNT)
     create_rdio_playlist(playlist_name, playlist_description, found_rdio_tracks)
 
     shutil.rmtree(dest_dir_base)
