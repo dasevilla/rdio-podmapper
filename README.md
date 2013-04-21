@@ -22,8 +22,15 @@ You don't have enough time to listen to every episode of every music podcast. It
 
 ## Usage
 
-Update API key variables and then run:
+Copy `config-sample.py` to `config.py` and add your API keys. The program assumes you have `lame` and `gnfingerprint`.
 
     python podmapper.py
+
+`gnfingerprint` is C program based on the `musicid_stream` sample code included in the GNSDK. To build it:
+
+1. Replace `$GNSDK/samples/musicid_stream/main.c` with the `main.c` included in this repository
+2. Run `make`
+3. Once built, rename `sample` to `gnfingerprint`
+4. Place `gnfingerprint` it in your `$PATH`
 
 Built at [Music Hack Day Paris 2013](http://paris.musichackday.org/2013/)
